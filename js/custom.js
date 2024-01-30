@@ -23,16 +23,13 @@ var tuesday = [];
 
 // track = {main, ws} where ws is workshop
 monday.push(new scheduleEvent("Introduction", "09:30", "10:00", "main", " "));
-monday.push(new scheduleEvent("Programming workshop 1: Python", "10:00", "12:30", "main", "Introduction of the basics of Python programming"));
-monday.push(new scheduleEvent("Sharing session with external organisation", "12:30", "13:00", "main", " "));
-monday.push(new scheduleEvent("Lunch", "13:00", "14:30", "main", " "));
-monday.push(new scheduleEvent("Programming workshop 2: Prompt Engineering Principles", "14:30", "17:00", "main", "Explore prompt engineering principles, a low-tech approach to AI"));
-monday.push(new scheduleEvent("Fireside chat with NUS Computing Students", "17:00", "17:30", "main", "Current WiT members will share their journey that led them to pursue Computing and their experience on being a woman in Computing"));
+monday.push(new scheduleEvent("Programming workshop 1: Python", "10:00", "13:00", "main", "Introduction of the basics of Python programming"));
+monday.push(new scheduleEvent("Lunch with NUS Computing students", "13:00", "14:30", "main", "Current WiT members will share their journey that led them to pursue Computing and their experience on being a woman in Computing over lunch"));
+monday.push(new scheduleEvent("Programming workshop 2: Prompt Engineering Principles", "14:30", "17:30", "main", "Explore prompt engineering principles, a low-tech approach to AI"));
 
-tuesday.push(new scheduleEvent("Programming workshop 3: Langchain Framework with Python", "09:30", "11:30", "main", "Practical session emphasising the Langchain Framework"));
-tuesday.push(new scheduleEvent("Lunch", "11:30", "13:00", "main", " "));
-tuesday.push(new scheduleEvent("Programming workshop 4: Simple Chatbot using OpenAI API in IDLE", "13:00", "16:30", "main", "Craft a Python-based chatbot, which will be showcased towards the end, with prizes for Most Useful/Most Out-of-box"));
-tuesday.push(new scheduleEvent("Talk from external speakers", "16:30", "17:00", "main", " "));
+tuesday.push(new scheduleEvent("Programming workshop 3: Langchain Framework with Python", "09:30", "12:00", "main", "Practical session emphasising the Langchain Framework"));
+tuesday.push(new scheduleEvent("Lunch with NUS Computing students", "12:00", "13:30", "main", "Current WiT members will share their journey that led them to pursue Computing and their experience on being a woman in Computing over lunch"));
+tuesday.push(new scheduleEvent("Programming workshop 4: Simple Chatbot using OpenAI API in IDLE", "13:30", "17:00", "main", "Craft a Python-based chatbot, which will be showcased towards the end, with prizes for Most Useful/Most Out-of-box"));
 tuesday.push(new scheduleEvent("Closing Address", "17:00", "17:30", "main", " "));
 
 monday.sort((a,b) => (a.startTime >= b.startTime) ? 1: -1);
